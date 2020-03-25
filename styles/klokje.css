@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", "Sans-Serif;";
+}
+
+body{
+    background-color: #ffa9f1;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    text-align: center;
+    color: white;
+    margin: 10px;
+    line-height: 25px;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+.begroeting, .datum{
+    display: inline;
+}
+
+#klok{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.tijd{
+    height: 150px;
+    width: 150px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+.tijdtitel{
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.ondertitel{
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.dubbelpunt{
+    font-size: 0em;
+    color: white;
+}
+
+@media (min-width: 600px) {
+    
+    header{
+        margin: 20px;
+        line-height: 40px;
+        font-size: 2em;
+    }
+        
+    .tijd{
+        align-items:center;
+        height: 250px;
+        width: 250px;
+        font-size: 1.8em;
+        font-weight: 300;
+        margin: 20px;
+        border: 5px solid white;
+    }
+    
+@media (min-width: 1000px) {
+    
+    #klok{
+        flex-direction: row;
+        justify-content: center;
+    }
+        
+    header{
+        line-height: 50px;
+        font-size: 3em;
+    }
+    
+    .tijd{
+        height: 300px;
+        width: 300px;
+        margin: 50px;
+        border: 8px solid white;
+        border-radius: 25px;
+        
+    }
+    
+    .tijdtitel{
+        font-size: 5em;
+        font-weight: 400;
+    }
+
+    .ondertitel{
+        font-size: 1.8em;
+        font-weight: 400;
+    }
+    
+    .dubbelpunt{
+        font-size: 8em;
+        font-weight: 600;
+        color: white;
+    }
+    
+@media (min-width: 1600px) {
+        
+    header{
+        line-height: 70px;
+        font-size: 3.5em;
+    }
+        
+    .tijd{
+        height: 400px;
+        width: 400px;
+        margin: 60px;
+        border: 12px solid white;
+        border-radius: 25px;
+        
+    }
+    
+    .tijdtitel{
+        font-size: 6.5em;
+        font-weight: 600;
+    }
+
+    .ondertitel{
+        font-size: 2.3em;
+        font-weight: 600;
+    }
+    
+    .dubbelpunt{
+        font-size: 12em;
+    }
+        
+}
